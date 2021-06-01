@@ -1,5 +1,6 @@
-const input = document.querySelector("#name");
+// var inputb = document.querySelector("#name");
+// inputb.addEventListener("focusout",fout);
 
-input.addEventListener("blur", () => {
-    alert("Thanks for practicing");
-});
+// function fout(){
+// alert("thank you for participating!");
+// }
