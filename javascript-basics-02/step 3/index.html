@@ -3,10 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>Step 3</title>
+  <script    type="text/javascript"      src="step3.js"  >   </script>   
+  <style>
+  .myDiv {
+    border: 2px outset red;
+    background-color: lightblue;
+  }
+  </style>
 </head>
 <body>
-  <form>
-    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
-  </form>
+ 
+    <form>
+      <label for="name">Your name  : </label>
+      <input type="text" name="name" value="" id="name"/></br>
+      <label>Your new input is:</label><br>
+      <div class="myDiv" id="changeinput"></div>
+    </form>
+    <script>
+      document.getElementById("name").addEventListener("click", NewInput);
+  
+      function NewInput() {
+        var x = document.getElementById("name").value;
+        document.getElementById("changeinput").innerHTML = x;
+      }
+    </script>
+
 </body>
 </html>
