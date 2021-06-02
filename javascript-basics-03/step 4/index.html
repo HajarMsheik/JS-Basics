@@ -6,9 +6,31 @@
 </head>
 <body>
   <form>
-    <label for="password">password : </label><input type="text" name="password" value="" id="password" />
-    <label for="confirmation">Confirm : </label><input type="text" name="confirmation" value="" id="confirmation" />
-    <button type="button" name="button" >Test</button>
+    <label for="password">password : </label>
+    <input type="text" name="password" value="" id="password" />
+
+    <label for="confirmation">Confirm : </label>
+    <input type="text" name="confirmation" value="" id="confirmation" />
+
+    <button type="button" name="button"  onclick="confir()" >Test</button>
   </form>
+  <script>
+     function confir(){
+
+   if(document.getElementById("password").value!==document.getElementById("confirmation").value) {
+    document.getElementById("password").style.border="1px  inset red";
+    document.getElementById("confirmation").style.border="1px  inset red";
+     }
+     else{
+      document.getElementById("password").style.border="initial  initial  initial";
+      document.getElementById("confirmation").style.border="initial initial  initial";
+
+     }
+      
+
+
+     }
+   </script>
+
 </body>
 </html>
